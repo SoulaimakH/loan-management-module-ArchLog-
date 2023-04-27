@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api_gateway/src",
+  "monorepo": true,
+  "root": "apps/api_gateway",
+  "compilerOptions": {
+    "assets": [
+      "**/*.hbs"
+    ],
+    "webpack": true,
+    "tsConfigPath": "apps/api_gateway/tsconfig.app.json"
+  },
+  "projects": {
+    "loan": {
+      "type": "application",
+      "root": "apps/api_gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api_gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api_gateway/tsconfig.app.json"
+      }
+    },
+
+
+    "mailsender_service": {
+      "type": "application",
+      "root": "apps/mailsender_service",
+      "entryFile": "main",
+      "sourceRoot": "apps/mailsender_service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mailsender_service/tsconfig.app.json"
+      }
+    },
+    "registration_service": {
+      "type": "application",
+      "root": "apps/registration_service",
+      "entryFile": "main",
+      "sourceRoot": "apps/registration_service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/registration_service/tsconfig.app.json"
+      }
+    },
+    "credit_service": {
+      "type": "application",
+      "root": "apps/credit_service",
+      "entryFile": "main",
+      "sourceRoot": "apps/credit_service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/credit_service/tsconfig.app.json"
+      }
+    },
+    "credit_agreement": {
+      "type": "application",
+      "root": "apps/credit_agreement",
+      "entryFile": "main",
+      "sourceRoot": "apps/credit_agreement/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/credit_agreement/tsconfig.app.json"
+      }
+    },
+    "risk_management_servie": {
+      "type": "application",
+      "root": "apps/risk_management_servie",
+      "entryFile": "main",
+      "sourceRoot": "apps/risk_management_servie/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/risk_management_servie/tsconfig.app.json"
+      }
+    },
+    "comercial_service": {
+      "type": "application",
+      "root": "apps/comercial_service",
+      "entryFile": "main",
+      "sourceRoot": "apps/comercial_service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/comercial_service/tsconfig.app.json"
+      }
+    },
+    "load_manager": {
+      "type": "application",
+      "root": "apps/load_manager",
+      "entryFile": "main",
+      "sourceRoot": "apps/load_manager/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/load_manager/tsconfig.app.json"
+      }
+    }
+  }
+}
