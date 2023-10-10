@@ -1,3 +1,3 @@
 
-the frontend through [this link]([https://github.com/SoulaimakH/my-world-backend](https://github.com/SoulaimakH/loan-management-frontend)https://github.com/SoulaimakH/loan-management-frontend)
+> **_NOTE:_**  this is the frontend of the actual project where you can find the backend through [this link](https://github.com/SoulaimakH/my-world-backend)
 "# loan-management-module-ArchLog-" 
